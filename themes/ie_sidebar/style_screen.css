@@ -5,25 +5,25 @@
 #menulist a,
 #menulist a:link,
 #menulist a:visited {
-	display: block;
-	background: #fff;
-	text-decoration: none;
+    display: block;
+    background: #fff;
+    text-decoration: none;
 }
 #menulist a:hover {
-	background: #eed;
-	text-decoration: none;
+    background: #eed;
+    text-decoration: none;
 }
 
 #menulist {
-	list-style: none;
-	font-weight: bold;
-	margin-top: -.5em;
-	padding-right: 10px;
+    list-style: none;
+    font-weight: bold;
+    margin-top: -.5em;
+    padding-right: 10px;
 }
 
 #menulist li {
-	margin-left: 0;
-	margin-bottom: 1em;
+    margin-left: 0;
+    margin-bottom: 1em;
 }
 
 #menudiv .menuseparator {
@@ -31,30 +31,34 @@
 }
 
 #menulist li ul li {
-	list-style: none;
-	font-weight: bold;
-	margin: 0;
-	padding: 1px;
-	border-bottom: 1px solid #eed;
+    list-style: none;
+    font-weight: bold;
+    margin: 0;
+    padding: 1px;
+    border-bottom: 1px solid #eed;
 }
 
 #menulist li ul {
-	list-style: none;
-	font-weight: bold;
-	margin: 0;
-	padding-left: 10px;
+    list-style: none;
+    font-weight: bold;
+    margin: 0;
+    padding-left: 10px;
 }
 
 #menudiv {
-	float:left;
+    float:left;
 }
 #main {
-    float:right;
+    float:none;
+    clear:right;
+    padding-left: 15px;
+    display: table;
 }
+
 #container {
 }
 #footer {
-	clear:both;
+    clear:both;
 }
 /*
 #main {

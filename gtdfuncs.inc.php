@@ -149,9 +149,7 @@ function gtd_handleEvent($event,$page) {
     functions to prettify text, and remove possibly-harmful elements
 */
 function escapeforjavascript($txt) {
-    foreach (array('/\\/'=>'\\\\' , '"'=>'\\"' , '/'=>'\\/') as $from=>$to)
-        $txt=ereg_replace($from,$to,$txt);
-    return $txt;
+    return addcslashes($txt,"\\\'\"&\n\r<>");
 }
 //-------------------------------------------------
 function escapeChars($str) {  // TOFIX consider internationalization issues with charset coding
