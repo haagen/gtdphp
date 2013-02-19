@@ -30,7 +30,7 @@ function getDBVersion() {
 */
 function getDBtables($db) {
     $tablelist=array();
-    $tables=doQuery("SHOW TABLES FROM $db");
+    $tables=doQuery("SHOW TABLES");
 	  foreach ($tables as $row) {
 			$name = array_values($row);
 	   array_push($tablelist, $name[0]);
