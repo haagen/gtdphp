@@ -49,8 +49,10 @@
 	float:left;
 }
 #main {
-    float:left;
-    clear:none;
+    float:none;
+    clear:right;
+    padding-left: 15px;
+    display: table;    
 }
 #container {
 }

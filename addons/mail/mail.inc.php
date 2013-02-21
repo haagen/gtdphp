@@ -54,7 +54,7 @@ else
             $header_info = imap_headerinfo($mbox, $i);
 
             $subjects = imap_mime_header_decode($header_info->Subject);
-            $subject = "";
+            $body = $subject = "";
             for ($k=0;$k<count($subjects);$k++) $subject .= $subjects[$k]->text;
             
             $s = imap_fetchstructure($mbox,$i);
@@ -85,9 +85,15 @@ else
             $values["title"] = $subject;
             $values["description"] = $body;
             $values["type"] = "i";
+            $values["isSomeday"] = $values["nextaction"] = "n";
             $values["dateCompleted"] = "NULL";
+            $values["desiredOutcome"] = "";
+            $values['recur']=null;
+            $values['recurdesc']=null;
             $values["tickledate"] = "NULL";
             $values["deadline"] = "NULL";
+            $values["categoryId"] = $values["timeframeId"] = $values["contextId"] = 0;
+            
             $result = query("newitem",$values);
             if (!$result) {
                 echo "Failed to save item: " . $values["title"] . "<br />";
