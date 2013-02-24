@@ -6,6 +6,7 @@ include_once 'headerDB.inc.php';
 $values = array();
 $values['itemId']= (empty($_REQUEST['itemId']))? 0 : (int) $_REQUEST['itemId'];
 $values['parentId']=array();
+$values['ptypefilterquery'] = null;
 
 $values['filterquery']='';
 $taglisttemp=query('gettags',$values);

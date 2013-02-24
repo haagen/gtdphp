@@ -31,6 +31,7 @@ $menu[] = array("link"=>"listItems.php?type=i", 'title'=>"Process inbox", 'label
 $menu[] = array("link"=>"listItems.php?type=a&amp;nextonly=true", 'title'=>"Process Next actions", 'label' => "Next Actions");
 $menu[] = array("link"=>"listItems.php?type=a", 'title'=>"Process actions", 'label' => "Actions");
 $menu[] = array("link"=>"listItems.php?type=w", 'title'=>"Process waiting-ons", 'label' => "Waiting On");
+$menu[] = array("link" => "listItems.php?dueonly=true&liveparents=*&type=*&tags=", 'title'=>"Due", 'label'=>"Due" );
 $menu[] = array("link"=>"listItems.php?type=r", 'title'=>"Process references", 'label' => "References");
 $menu[] = array("link"=>"listItems.php?type=p", 'title'=>"Process projects", 'label' => "Projects");
 $menu[] = array("link"=>"listItems.php?type=p&amp;someday=true", 'title'=>"Process Someday projects", 'label' => "Someday/Maybes");
